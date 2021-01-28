@@ -1,5 +1,5 @@
 # PrettyTextTestRunner
-A simple Python unittest  drop-in replacement for Python's TextTestRunner,
+A simple Python unittest  drop-in replacement for Python's TextTestRunner.
 
 ## Why Did You Write This? Can't You Just Use &lt;insert latest/hotest framework here&gt;?
 While I (and others) could learn the new framework dé jour, I'm much more interested in getting things working and just getting things done. I needed to start testing a Flask application, and found that Python's unittest is a tad limited out of the box.   [Viniciusd's TestRunner.py](https://gist.github.com/viniciusd/73e6eccd39dea5e714b1464e3c47e067) is a great hack,  found the text output to be great but was still hacking HTMLTestRunner (of which it was based) and didn't need to output actual report files still being generate.
