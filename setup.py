@@ -10,7 +10,7 @@ ease. See the [Github project page|https://github.com/villagertech/PyPrettyTextT
 
 setuptools.setup(
     name="PrettyTextTestRunner", # Replace with your own username
-    version="0.1.0",
+    version="0.1.1",
     author="Rob MacKinnon",
     author_email="rome@villagertech.com",
     description="Rich drop-in replacement for unittest.TextTestRunner",
