@@ -11,7 +11,7 @@ __name__ = "PrettyTextTestRunner"
 __module__ = "PrettyTextTestRunner"
 __author__ = "Rob MacKinnon <rome@villagertechnolgies.com>"
 __license__ = "MIT"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __doc__ = """
 Example Usage:
@@ -33,7 +33,7 @@ runner.run(suite)
 
 from .textTable import TextTable
 
-START = "\033["
+START = "\x1b["
 END = ""
 COLOR = {
     'BLACK' : "0;30m",
@@ -46,6 +46,8 @@ COLOR = {
     'WHITE' : "0;37m",
     'END' : "0m",
 }
+
+SETTING_USE_COLOR = True
 
 
 class PrettyTestResult(TestResult):
@@ -103,8 +105,9 @@ class PrettyTestResult(TestResult):
             _total_expectF += self.tally[_clsName]['expectedFail']
 
         return [
-            str(_total_count), str(_total_success), str(_total_err),
-            str(_total_fail), str(_total_skip), str(_total_unexpS),
+            str(_total_count), str(_total_success),
+            str(_total_fail), str(_total_err),
+            str(_total_skip), str(_total_unexpS),
             str(_total_expectF)
         ]
 

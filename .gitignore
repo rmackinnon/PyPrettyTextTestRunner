@@ -5,3 +5,9 @@ __pycache__/*
 *.pyc
 dist
 dist/*
+build
+build/*
+build/*
+PrettyTextTestRunner.egg-info
+PrettyTextTestRunner.egg-info/*
+.pypirc
